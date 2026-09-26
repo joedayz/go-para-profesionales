@@ -15,8 +15,9 @@ func saludar(nombre string) string {
 }
 
 // ─────────────────────────────────────────────────────────────
-// 2. Múltiples retornos (idioma Go más característico)
-//    Convención: el último retorno suele ser un error
+//  2. Múltiples retornos (idioma Go más característico)
+//     Convención: el último retorno suele ser un error
+//
 // ─────────────────────────────────────────────────────────────
 func dividir(a, b float64) (float64, error) {
 	if b == 0 {
@@ -26,8 +27,9 @@ func dividir(a, b float64) (float64, error) {
 }
 
 // ─────────────────────────────────────────────────────────────
-// 3. Retornos nombrados
-//    Útil en funciones cortas para mayor claridad
+//  3. Retornos nombrados
+//     Útil en funciones cortas para mayor claridad
+//
 // ─────────────────────────────────────────────────────────────
 func minMax(nums []int) (min, max int) {
 	min, max = nums[0], nums[0]
@@ -54,16 +56,18 @@ func sumar(nums ...int) int {
 }
 
 // ─────────────────────────────────────────────────────────────
-// 5. Funciones como valores (first-class functions)
-//    Go trata las funciones como cualquier otro tipo
+//  5. Funciones como valores (first-class functions)
+//     Go trata las funciones como cualquier otro tipo
+//
 // ─────────────────────────────────────────────────────────────
 func aplicar(valor int, operacion func(int) int) int {
 	return operacion(valor)
 }
 
 // ─────────────────────────────────────────────────────────────
-// 6. Closure: función que captura su entorno
-//    Patrón muy usado para counters, builders, etc.
+//  6. Closure: función que captura su entorno
+//     Patrón muy usado para counters, builders, etc.
+//
 // ─────────────────────────────────────────────────────────────
 func nuevoContador() func() int {
 	count := 0
@@ -74,8 +78,9 @@ func nuevoContador() func() int {
 }
 
 // ─────────────────────────────────────────────────────────────
-// 7. defer: pospone ejecución hasta que la función retorna
-//    Orden LIFO — muy usado para liberar recursos
+//  7. defer: pospone ejecución hasta que la función retorna
+//     Orden LIFO — muy usado para liberar recursos
+//
 // ─────────────────────────────────────────────────────────────
 func procesarArchivo(nombre string) {
 	fmt.Printf("Abriendo archivo: %s\n", nombre)

@@ -128,3 +128,5 @@ go run ./05-paquetes/
 
 **Clase 02 — Programación orientada a servicios**  
 Structs, interfaces, composición y diseño limpio en Go.
+
+Código: [`clase02-servicios`](../clase02-servicios/)

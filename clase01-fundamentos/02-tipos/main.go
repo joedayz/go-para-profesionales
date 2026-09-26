@@ -13,7 +13,8 @@ func main() {
 	var entero int = 42
 	var grande int64 = 9_000_000_000 // _ como separador visual (Go 1.13+)
 	var decimal float64 = 3.14159
-	var complejo complex128 = 2 + 3i
+	var complejo complex128 = 2 + 3i //  complex64  float32  float32
+	//  complex128  float64 float64
 
 	fmt.Printf("int: %d\n", entero)
 	fmt.Printf("int64: %d\n", grande)
